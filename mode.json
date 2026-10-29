@@ -1,0 +1,8 @@
+{
+  "id": "mode-release",
+  "version": "0.1.0",
+  "elements": [
+    { "element": "role-release-captain", "ref": "main" },
+    { "element": "module-releases", "ref": "main" }
+  ]
+}

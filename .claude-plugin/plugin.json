@@ -1,0 +1,5 @@
+{
+  "name": "rasa-mode-release",
+  "version": "0.1.0",
+  "description": "The release mode: role-release-captain + module-releases, loaded together as one named Element set (galt ADR 0071)."
+}

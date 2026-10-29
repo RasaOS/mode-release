@@ -1,0 +1,32 @@
+{
+  "$schema": "https://rasa-os.github.io/schema/rasa.schema.v1.json",
+  "contract_version": "1.4.0",
+  "name": "rasa.module.mode.release",
+  "version": "0.1.0",
+  "kind": "module",
+  "aliases": [
+    "mode-release"
+  ],
+  "description": "The release mode: role-release-captain + module-releases, loaded together as one named Element set.",
+  "source": {
+    "repo": "https://github.com/RasaOS/mode-release",
+    "branch": "main"
+  },
+  "tier": "Pro",
+  "capabilities": [
+    "mode.release"
+  ],
+  "permissions": [],
+  "requires": {
+    "parent_kind": [
+      "domain",
+      "tenant"
+    ]
+  },
+  "rasa": {
+    "shape_pattern": "mode",
+    "mode_id": "mode-release",
+    "mode_version": "0.1.0",
+    "note": "Example mode Element (galt ADR 0071; tenant ADR 2026-10-28-one-role-list D5). A mode is a pure composition declaration (canon's recipe kind): mode.json lists member Elements by name+ref; it carries no prompt.md, settings.json or skills of its own — everything it contributes comes from its members. Applying it (`galt mode set <session> mode-release`) replaces the session's whole loaded-Elements list with the resolved members, not an add to whatever was loaded before."
+  }
+}
